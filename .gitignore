@@ -4,6 +4,7 @@ __pycache__/
 *.pyo
 
 # Virtual environment directories
+.env
 venv/
 env/
 lib/

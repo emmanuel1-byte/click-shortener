@@ -61,5 +61,3 @@ The API documentation is automatically generated using **Swagger UI** and can be
 [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
 --- 
-
-This corrects the formatting, especially for the code blocks, and keeps your content intact.

@@ -33,7 +33,7 @@ echo "Do you want to make a PR (yes, no)"
 read DECISION
 
 if [ "$DECISION" = "yes" ]; then
-    gh pr create --base staging --head $BRANCH_NAME --title "$COMMIT_MESSAGE"
+    gh pr create --base main --head $BRANCH_NAME --title "$COMMIT_MESSAGE"
     echo "Pull request opened successfully."
 elif [ "$DECISION" = "no" ]; then
     echo "Your changes have been pushed."
