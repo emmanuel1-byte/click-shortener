@@ -1,5 +1,3 @@
-Here’s the markdown structure corrected with your content:
-
 ---
 
 # URL Shortener with Click Analytics
