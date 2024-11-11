@@ -1,5 +1,7 @@
 ---
 
+---
+
 # URL Shortener with Click Analytics
 
 A simple URL shortener built with **FastAPI** and **SQLModel** that allows users to shorten URLs and track the number of clicks on each shortened URL. This application demonstrates how to implement URL shortening and analytics using FastAPI and SQLModel.
@@ -42,6 +44,7 @@ pip install -r requirements.txt
 
 ### 4. Set up the database
 
+Make sure your database (PostgreSQL/MySQL) is set up and configured.
 Make sure your database (PostgreSQL/MySQL) is set up and configured.
 
 ### 5. Start the application
