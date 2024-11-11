@@ -26,6 +26,7 @@ cd url-shortener
 ```
 ````
 
+```markdown
 ### 2. Set up a virtual environment (recommended)
 
 ```bash
@@ -41,7 +42,7 @@ pip install -r requirements.txt
 
 ### 4. Set up the database
 
-Make sure your database (SQLite/PostgreSQL/MySQL) is set up and configured.
+Make sure your database (/PostgreSQL/MySQL) is set up and configured.
 
 ### 5. Start the application
 
@@ -58,7 +59,4 @@ The application should now be running at `http://127.0.0.1:8000`.
 The API documentation is automatically generated using **Swagger UI** and can be accessed at the following URL:
 
 [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
-
-```
-
 ```
