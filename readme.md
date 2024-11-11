@@ -1,3 +1,7 @@
+Here’s the markdown structure corrected with your content:
+
+---
+
 # URL Shortener with Click Analytics
 
 A simple URL shortener built with **FastAPI** and **SQLModel** that allows users to shorten URLs and track the number of clicks on each shortened URL. This application demonstrates how to implement URL shortening and analytics using FastAPI and SQLModel.
@@ -23,10 +27,8 @@ A simple URL shortener built with **FastAPI** and **SQLModel** that allows users
 ```bash
 git clone https://github.com/emmanuel1-byte/click-shortener.git
 cd url-shortener
+```
 
-````
-
-```markdown
 ### 2. Set up a virtual environment (recommended)
 
 ```bash
@@ -42,7 +44,7 @@ pip install -r requirements.txt
 
 ### 4. Set up the database
 
-Make sure your database (/PostgreSQL/MySQL) is set up and configured.
+Make sure your database (PostgreSQL/MySQL) is set up and configured.
 
 ### 5. Start the application
 
@@ -59,4 +61,7 @@ The application should now be running at `http://127.0.0.1:8000`.
 The API documentation is automatically generated using **Swagger UI** and can be accessed at the following URL:
 
 [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
-```
+
+--- 
+
+This corrects the formatting, especially for the code blocks, and keeps your content intact.
