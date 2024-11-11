@@ -23,7 +23,7 @@ A simple URL shortener built with **FastAPI** and **SQLModel** that allows users
 ```bash
 git clone https://github.com/emmanuel1-byte/click-shortener.git
 cd url-shortener
-```
+
 ````
 
 ```markdown
