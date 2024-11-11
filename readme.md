@@ -1,4 +1,3 @@
-````
 # URL Shortener with Click Analytics
 
 A simple URL shortener built with **FastAPI** and **SQLModel** that allows users to shorten URLs and track the number of clicks on each shortened URL. This application demonstrates how to implement URL shortening and analytics using FastAPI and SQLModel.
