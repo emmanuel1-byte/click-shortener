@@ -56,7 +56,7 @@ The application should now be running at `http://127.0.0.1:8000`.
 
 ## API Documentation
 
-The API documentation is automatically generated using **Swagger UI** and can be accessed at the following URL:
+The API documentation is automatically generated using **Swagger UI** and can be accessed at the following URL on your local machine:
 
 [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 

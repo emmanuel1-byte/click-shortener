@@ -1,6 +1,8 @@
 from sqlmodel import Session, select
+from sqlalchemy import func
 from ..models.analytics_model import Analytics
 from ..models.url_model import URL
+from fastapi.encoders import jsonable_encoder
 
 
 def create_analytics(data: dict, session: Session):
@@ -14,14 +16,29 @@ def create_analytics(data: dict, session: Session):
         session.commit()
         session.refresh(new_analytics)
 
-        return dict(new_analytics)
+        return jsonable_encoder(new_analytics)
 
 
-def get_url_analytics(url_id, session: Session):
-    statement = select(Analytics).where(Analytics.url_id == url_id)
+def get_url_analytics(url_id, offset, limit, session: Session):
+    statement = (
+        select(Analytics)
+        .where(Analytics.url_id == url_id)
+        .offset((offset - 1) * limit)
+        .limit(limit)
+    )
+    count = session.exec(
+        select(func.count(Analytics.id)).where(Analytics.url_id == url_id)
+    ).one()
     result = session.exec(statement).fetchall()
 
     if result is None:
         return None
-    else:
-        return result
+
+    return (
+        {
+            "analytics": jsonable_encoder(result),
+            "total_count": count,
+            "offset": offset,
+            "limit": limit,
+        },
+    )

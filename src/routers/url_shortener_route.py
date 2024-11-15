@@ -35,7 +35,6 @@ def redirect_to_original_url(
         raise HTTPException(status_code=404, detail="Url does not exist")
 
     new_analytics = {"url_id": shorten_url.id, "ip_address": request.client.host}
-    print(new_analytics, "Route....")
     create_analytics(new_analytics, session)
 
     return RedirectResponse(shorten_url.original_url, status_code=307)
