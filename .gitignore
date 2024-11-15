@@ -4,7 +4,6 @@ __pycache__/
 *.pyo
 
 # Virtual environment directories
-.env
 venv/
 env/
 lib/
@@ -24,3 +23,6 @@ dist/
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
+
+.env
+include/
